@@ -1,11 +1,9 @@
 #!/bin/bash
-cd /home/ec2-user/app
 
-# Install serve globally
+cd /home/ec2-user/app/projects/cloud-support-engineer-projects/project-3/globalmart-catalog
+
 sudo npm install -g serve
 
-# Kill old process
 pkill -f serve || true
 
-# Start app
 serve -s build -l 3000
